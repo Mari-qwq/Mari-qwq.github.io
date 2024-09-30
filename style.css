@@ -13,36 +13,37 @@ body {
   background-color: #97C3E4;
   padding: 20px;
 }
+
 .menu {
-  
-    display: flex;
-  flex-direction: column;
-    align-items: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
 .menu nav ul {
-    
-    display: flex; 
-    justify-content: center;
-    margin-bottom: 10px;
+  list-style-type: none;
+  display: flex; 
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .menu nav ul li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .menu nav ul li a {
-    color: white;
-    
-    padding: 5px 10px;
-    background-color: #555;
-    border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #555;
+  border-radius: 5px;
 }
 
 .menu nav ul li a:hover {
-    background-color: #777;
+  background-color: #777;
 }
+
 .site-name {
-    font-size: 24px;
-    text-align: center;
+  font-size: 24px;
+  text-align: center;
 }
