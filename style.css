@@ -1,1 +1,14 @@
+body {
+  margin: 0;
+  background-color: #064B80;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5AA8E4
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
 
