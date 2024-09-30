@@ -15,8 +15,9 @@ body {
   align-items: center; 
   background-color: #97C3E4; 
   padding: 20px;
+  border-radius: 8px;
   border: 2px solid #FFB85A;
-   border-radius: 8px;
+   
 }
 
 .logo {
