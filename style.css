@@ -21,9 +21,8 @@ body {
 }
 
 .menu nav al{
-  ist-style-type: none;
+  
     display: flex;
-    flex-direction: column;
     margin-bottom: 10px;
 }
 .menu nav ul li {
