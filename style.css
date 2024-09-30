@@ -6,7 +6,7 @@ body {
 .container {
   margin: 0 auto;
   padding: 20px;
-  border-radius: 5px;
+  
 }
 
 .header {
@@ -14,6 +14,7 @@ body {
   align-items: center; 
   background-color: #97C3E4; 
   padding: 20px;
+  border-radius: 5px;
 }
 
 .logo {
