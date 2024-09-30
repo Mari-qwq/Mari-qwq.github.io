@@ -9,8 +9,19 @@
     <header id="header">
         <div class="content">
             <img id="logo" src = "https://i.pinimg.com/736x/ba/09/9d/ba099dee6b946b78d082de0822c6b610.jpg" alt = "Логотип сайта">
+            <nav class="nav-right">
+              <ul>
+                <li><a href="#link">Список ссылок</a></li>
+                <li><a href="#table">Таблица</a></li>
+                <li><a href="#forma">Форма</a></li>
+              </ul>
+            </nav>
+            <div class="syte">
+                <p> Название сайта </p>
+            </div>
+        </div>
     </header>
-    <h1>Список ссылок</h1>
+    <h1 id="link">Список ссылок</h1>
 
     <ul>
         <li>Абсолютная гиперссылка на главную страницу сайта kubsu.ru: <a href="http://kubsu.ru/">Главная страница kubsu.ru</a></li>
@@ -56,6 +67,25 @@
     <map name="image1">
         <area shape="circle" coords="100,100,100" href="https://example.com" alt="Перейти на сайт">
     </map>
+    <h2 id="table">Таблица</h2>
+    <table border = "1">
+        <thread>
+            <tr>
+            <th>Колонка 1</th>
+            <th>Колонка 2</th>
+                </tr>
+        </thread>
+        <tbody>
+            <tr>
+                <td colspan="2">Ячейки 11 и 12</td>
+            </tr>
+            <tr>
+                <td>Ячейка 21</td>
+                <td>Ячейка 22</td>
+            </tr>
+        </tbody>
+        
+    </table>
         
     <h2> Форма</h2>
     <form id = "forma" action="/submit_form" method="POST">
