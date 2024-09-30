@@ -10,14 +10,12 @@ body {
 
 .header {
   display: flex;
-  flex-direction: column; 
   align-items: center; 
   background-color: #97C3E4; 
   padding: 20px;
 }
 
 .logo {
-  align-self: flex-start;
   font-size: 24px;
 }
 
