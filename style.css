@@ -9,7 +9,7 @@ body {
 }
 .header {
   display: flex;
-  
+  flex-direction:column;
   align-items: center;
   background-color: #97C3E4;
   padding: 20px;
@@ -48,4 +48,5 @@ body {
 .site-name {
   font-size: 24px;
   text-align: center;
+  margin-top: 10px
 }
