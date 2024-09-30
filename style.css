@@ -64,7 +64,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
-  border: 2px #FFB85A;
+  border: 2px solid #FFB85A;
 }
 
 .links h2 {
@@ -85,12 +85,12 @@ body {
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
-  border: 2px #FFB85A;
+  border: 2px solid #FFB85A;
 }
 .forma {
     background-color: #97C3E4;
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
-  border: 2px #FFB85A;
+  border: 2px solid #FFB85A;
 }
