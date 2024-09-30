@@ -16,12 +16,10 @@ body {
 }
 .menu{
   display: flex;
-  flex-direction:column;
   align-items: center;
 }
 
 .menu nav al{
-  
     display: flex;
     margin-bottom: 10px;
 }
