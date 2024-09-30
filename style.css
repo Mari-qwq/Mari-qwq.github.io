@@ -4,6 +4,7 @@ body {
 }
 
 .container {
+  max-width: 960px;
   margin: 0 auto;
   padding: 20px;
   
@@ -14,7 +15,6 @@ body {
   align-items: center; 
   background-color: #97C3E4; 
   padding: 20px;
-  border-radius: 5px;
 }
 
 .logo {
@@ -58,3 +58,5 @@ body {
   text-align: center;
   margin-top: 10px;
 }
+
+
