@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #064B80; /* Фон страницы (темно-синий) */
+  background-color: #064B80;
 }
 
 .container {
@@ -10,50 +10,50 @@ body {
 
 .header {
   display: flex;
-  flex-direction: column; /* Изменено на столбец */
-  align-items: center; /* Центрирование по горизонтали */
-  background-color: #97C3E4; /* Фон шапки (светло-голубой) */
+  flex-direction: column; 
+  align-items: center; 
+  background-color: #97C3E4; 
   padding: 20px;
 }
 
 .logo {
-  align-self: flex-start; /* Логотип слева */
-  font-size: 24px; /* Размер логотипа */
+  align-self: flex-start;
+  font-size: 24px;
 }
 
 .menu {
-  flex-grow: 1; /* Занять оставшееся пространство */
+  flex-grow: 1;
   display: flex;
-  flex-direction: column; /* Вертикальное расположение для меню */
-  align-items: center; /* Центрирование по горизонтали */
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu nav ul {
-  list-style-type: none; /* Убрать маркеры списка */
-  display: flex; /* Горизонтальное расположение ссылок */
-  justify-content: center; /* Центрирование ссылок */
-  margin-bottom: 10px; /* Отступ снизу */
-  padding: 0; /* Убрать отступы */
+  list-style-type: none; 
+  display: flex;
+  justify-content: center;
+  margin-bottom:10px;
+  padding: 0;
 }
 
 .menu nav ul li {
-  margin-right: 20px; /* Отступ между ссылками */
+  margin-right: 20px;
 }
 
 .menu nav ul li a {
-  color: white; /* Цвет текста */
-  text-decoration: none; /* Убрать подчеркивание */
-  padding: 5px 10px; /* Отступы внутри ссылки */
-  background-color: #1D5B8A; /* Фон ссылки */
-  border-radius: 5px; /* Закругление углов */
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px; 
+  background-color: #1D5B8A;
+  border-radius: 5px;
 }
 
 .menu nav ul li a:hover {
-  background-color: #FFB85A; /* Цвет ссылки при наведении */
+  background-color: #FFB85A;
 }
 
 .site-name {
-  font-size: 24px; /* Размер названия сайта */
-  text-align: center; /* Выравнивание по центру */
-  margin-top: 10px; /* Отступ сверху */
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10px;
 }
