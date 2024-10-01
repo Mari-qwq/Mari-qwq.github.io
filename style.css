@@ -136,3 +136,6 @@ body {
     background-color: #FFFFFF;
     color: #333;
 }
+.table tr:nth-child(even) td {
+    background-color: #F0F0F0;
+}
