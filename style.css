@@ -66,6 +66,10 @@ body {
     margin-top: 20px;
   border: 2px solid #FFB85A;
 }
+.links h1{
+  text-align: center;
+    margin-bottom: 15px;
+}
 
 .links h2 {
     text-align: center;
@@ -94,6 +98,10 @@ body {
     margin-top: 20px;
   border: 2px solid #FFB85A;
 }
+.forma h2{
+  text-align: center;
+    margin-bottom: 15px;
+}
 .footer {
   background-color: #1D5B8A;
   padding: 20px;
@@ -107,13 +115,13 @@ body {
 
 .table table {
     width: 100%;
-    border-collapse: collapse; /* Убирает промежутки между границами */
+    border-collapse: collapse;
 }
 
 .table th, .table td {
     padding: 10px;
     text-align: center;
-    border: 2px solid #FFB85A; /* Добавляет границы вокруг ячеек */
+    border: 2px solid #FFB85A;
 }
 
 .table th {
@@ -131,13 +139,3 @@ body {
     background-color: #F0F0F0; /* Цвет для четных строк */
 }
 
-.table tr:hover td {
-    background-color: #FFB85A; /* Цвет ячеек при наведении */
-    color: white;
-}
-
-.table td[colspan] {
-    background-color: #FFB85A; /* Цвет для объединенной ячейки */
-    font-weight: bold;
-    color: white;
-}
