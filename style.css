@@ -54,13 +54,13 @@ body {
   background-color: #FFB85A;
 }
 
-.site-name {
+#site-name {
   font-size: 24px;
   text-align: center;
   margin-top: 10px;
 }
 
-.links {
+#links {
     background-color: #97C3E4;
     padding: 20px;
     border-radius: 8px;
@@ -68,31 +68,31 @@ body {
   border: 2px solid #FFB85A;
    
 }
-.links h1{
+#links h1{
   text-align: center;
     margin-bottom: 15px;
 }
-.links h3{
+#links h3{
   text-align: center;
     margin-bottom: 15px;
 }
 
-.links ul {
+#links ul {
     list-style-type: disc;
     padding-left: 20px;
 }
 
-.links li {
+#links li {
     margin: 5px 0;
 }
-.table {
+#table {
     background-color: #97C3E4;
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
   border: 2px solid #FFB85A;
 }
-.forma {
+#forma {
     background-color: #97C3E4;
     padding: 20px;
     border-radius: 8px;
@@ -100,42 +100,42 @@ body {
   border: 2px solid #FFB85A;
    text-align: center;
 }
-.forma h2{
+#forma h2{
   text-align: center;
     margin-bottom: 15px;
 }
-.footer {
+#footer {
   background-color: #1D5B8A;
   padding: 20px;
   text-align: center;
 }
 
-.table h2 {
+#table h2 {
     text-align: center;
     margin-bottom: 15px;
 }
 
-.table table {
+#table table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.table th, .table td {
+#table th, .table td {
     padding: 10px;
     text-align: center;
     border: 2px solid #FFB85A;
 }
 
-.table th {
+#table th {
     background-color: #1D5B8A;
     color: white;
     font-weight: bold;
 }
 
-.table td {
+#table td {
     background-color: #FFFFFF;
     color: #333;
 }
-.table tr:nth-child(even) td {
+#table tr:nth-child(even) td {
     background-color: #F0F0F0;
 }
