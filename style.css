@@ -15,29 +15,29 @@ body {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Пространство между элементами */
+  justify-content: space-between; 
   background-color: #97C3E4;
   padding: 20px;
   border-radius: 8px;
   border: 2px solid #FFB85A;
-  position: relative; /* Относительное позиционирование */
+  position: relative; 
 }
 
 #logo {
-  flex-shrink: 0; /* Логотип остается слева */
+  flex-shrink: 0; 
 }
 
 #site-name {
   font-size: 24px;
   text-align: center;
-  flex-grow: 1; /* Название занимает оставшееся пространство */
-  margin: 0; /* Убираем отступы */
+  flex-grow: 1; 
+  margin: 0;
 }
 
 .menu {
   position: absolute;
-  top: 20px; /* Прижимаем к верхнему краю */
-  right: 20px; /* Прижимаем к правому краю */
+  top: 20px; /
+  right: 20px; 
 }
 
 .menu nav ul {
