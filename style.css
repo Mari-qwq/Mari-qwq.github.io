@@ -30,6 +30,9 @@ body {
   align-items: center;
 }
 
+.menu nav {
+  align-items: right;
+}
 .menu nav ul {
   list-style-type: none; 
   display: flex;
