@@ -33,7 +33,7 @@ body {
 .menu nav ul {
   list-style-type: none; 
   display: flex;
-  justify-content: right;
+  justify-content: center;
   margin-bottom:10px;
   padding: 0;
 }
@@ -133,7 +133,7 @@ body {
 }
 
 #table td {
-    background-color: #a0cbea;
+    background-color: ##FFB85A;
     color: #333;
 }
 #table tr:nth-child(even) td {
