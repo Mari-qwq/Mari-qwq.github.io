@@ -104,10 +104,10 @@ body {
     border-radius: 8px;
     margin-top: 20px;
   border: 2px solid #FFB85A;
-   text-align: center;
+   text-align: left;
 }
 #forma h2{
-  text-align: left;
+  text-align: center;
     margin-bottom: 15px;
 }
 #footer {
