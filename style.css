@@ -28,6 +28,7 @@ body {
 
 #site-name {
   font-size: 24px;
+  align-self: center;
   text-align: center;
   flex-grow: 1; 
   margin: 0;
