@@ -20,7 +20,7 @@ body {
   padding: 20px;
   border-radius: 8px;
   border: 2px solid #FFB85A;
-  position: relative; 
+   
 }
 
 #logo {
@@ -35,9 +35,9 @@ body {
 }
 
 .menu {
-  
-  top: 20px; /
-  right: 20px; 
+display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .menu nav ul {
