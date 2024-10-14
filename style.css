@@ -109,7 +109,13 @@ body {
   background-color: #1D5B8A;
   padding: 20px;
   text-align: left;
+  
 }
+.responsive-img {
+  max-width: 100%;  /* Изображение не будет шире контейнера */
+  height: auto;     /* Сохраняем пропорции изображения */
+}
+
 
 /* Медиазапросы для адаптации на мобильных устройствах */
 @media (max-width: 767px) {
