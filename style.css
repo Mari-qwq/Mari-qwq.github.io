@@ -127,8 +127,9 @@ body {
   }
   .container {
     max-width: 100%; /* Ширина контейнера будет адаптироваться под мобильные устройства */
-    padding: 10px; /* Можно уменьшить отступы на мобильных */
+    padding: 10px; 
     display: flex;
+    flex-direction: column;
   }
 
   #logo {
