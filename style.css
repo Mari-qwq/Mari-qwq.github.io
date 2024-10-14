@@ -121,8 +121,8 @@ body {
 @media (max-width: 767px) {
   .header {
      max-width: 100%
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    allign-items: centre;
   }
   .container {
     max-width: 100%; /* Ширина контейнера будет адаптироваться под мобильные устройства */
@@ -133,21 +133,28 @@ body {
     margin-bottom: 10px;
   }
 
-  .menu {
-    justify-content: center;
+ .menu {
+    display: flex;
+    flex-direction: column; /* Ссылки идут одна под другой */
+    align-items: center;
   }
 
-  .menu nav ul {
-    flex-direction: column;
+  .menu ul {
+    flex-direction: column; /* Вертикальное расположение ссылок */
+    width: 100%;
     align-items: center;
+  }
+
+  .menu li {
+    width: 100%; /* Ссылки занимают 100% ширины */
+    margin: 5px 0;
+  }
+
+  .menu li a {
+    display: block;
+    text-align: center;
     width: 100%;
   }
-
-  .menu nav ul li {
-    margin-bottom: 10px;
-    margin-left: 0;
-  }
-
   #links,
   #table,
   #forma {
