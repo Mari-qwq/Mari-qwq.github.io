@@ -118,7 +118,7 @@ body {
 
 
 /* Медиазапросы для адаптации на мобильных устройствах */
-@media (min-width: 767px) {
+@media (max-width: 800px) {
   .header {
      max-width: 100%
     flex-direction: row;
