@@ -140,7 +140,7 @@ body {
     display: flex;
     flex-direction: column; /* Ссылки идут одна под другой */
     align-items: center;
-   order: 2;
+   order: 1;
   }
 
   .menu ul {
@@ -171,11 +171,11 @@ body {
     text-align: center;
   }
   #table {
-    order: 1; /* Таблица будет отображаться первой */
+    order: 2; /* Таблица будет отображаться первой */
   }
 
   #links {
-    order: 2; /* Ссылки будут отображаться после таблицы */
+    order: 3; /* Ссылки будут отображаться после таблицы */
   }
 }
 
