@@ -120,6 +120,7 @@ body {
 /* Медиазапросы для адаптации на мобильных устройствах */
 @media (max-width: 800px) {
   .header {
+    display: flex;
      max-width: 100%
     flex-direction: row;
     allign-items: centre;
@@ -127,6 +128,7 @@ body {
   .container {
     max-width: 100%; /* Ширина контейнера будет адаптироваться под мобильные устройства */
     padding: 10px; /* Можно уменьшить отступы на мобильных */
+    display: flex;
   }
 
   #logo {
@@ -176,31 +178,4 @@ body {
   }
 }
 
-/* Медиазапрос для более маленьких устройств (до 576px) */
-@media (max-width: 576px) {
-  .container {
-    max-width: 100%;
-    padding: 10px;
-  }
-  .header {
-     max-width: 100%
-    padding: 10px;
-  }
-  
-
-  .menu nav ul li a {
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-  }
-
-  .menu {
-    margin-top: 10px;
-  }
-
-  #links, #table, #forma {
-    padding: 15px;
-    border-radius: 5px;
-  }
-}
 
