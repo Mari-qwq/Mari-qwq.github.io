@@ -114,6 +114,7 @@ body {
 /* Медиазапросы для адаптации на мобильных устройствах */
 @media (max-width: 767px) {
   .header {
+     max-width: 100%
     flex-direction: column;
     align-items: center;
   }
@@ -149,6 +150,7 @@ body {
   }
 
   #footer {
+     max-width: 100%
     text-align: center;
   }
 }
@@ -160,6 +162,7 @@ body {
     padding: 10px; /* Можно уменьшить отступы на мобильных */
   }
   .header {
+     max-width: 100%
     padding: 10px;
   }
   
