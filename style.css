@@ -1,41 +1,37 @@
 body {
   margin: 0;
   background-color: #064B80;
-
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
-  
 }
-
 
 .header {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   background-color: #97C3E4;
   padding: 20px;
   border-radius: 8px;
   border: 2px solid #FFB85A;
-   
 }
 
 #logo {
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 #site-name {
   font-size: 24px;
   align-self: center;
   text-align: center;
-  flex-grow: 1; 
+  flex-grow: 1;
   margin: 0;
 }
 
 .menu {
-display: flex;
+  display: flex;
   justify-content: flex-end;
   align-items: flex-start;
   margin-top: -10px;
@@ -65,87 +61,57 @@ display: flex;
   background-color: #FFB85A;
 }
 
-
-#links {
-    background-color: #97C3E4;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-  border: 2px solid #FFB85A;
-   
-}
-#links h1{
-  text-align: center;
-    margin-bottom: 15px;
-}
-#links h3{
-  text-align: center;
-    margin-bottom: 15px;
-}
-
-#links ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-#links li {
-    margin: 5px 0;
-}
-#table {
-    background-color: #97C3E4;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-  border: 2px solid #FFB85A;
-}
+#links,
+#table,
 #forma {
-    background-color: #97C3E4;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
+  background-color: #97C3E4;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
   border: 2px solid #FFB85A;
-   text-align: left;
 }
-#forma h2{
+
+#links h1,
+#table h2,
+#forma h2 {
   text-align: center;
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
+
+#table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#table th,
+#table td {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #FFB85A;
+}
+
+#table th {
+  background-color: #1D5B8A;
+  color: white;
+  font-weight: bold;
+}
+
+#table td {
+  background-color: #FFB85A;
+  color: #333;
+}
+
+#table tr:nth-child(even) td {
+  background-color: #F0F0F0;
+}
+
 #footer {
   background-color: #1D5B8A;
   padding: 20px;
   text-align: left;
 }
 
-#table h2 {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-#table table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-#table th, #table td {
-    padding: 10px;
-    text-align: center;
-    border: 2px solid #FFB85A;
-}
-
-#table th {
-    background-color: #1D5B8A;
-    color: white;
-    font-weight: bold;
-}
-
-#table td {
-    background-color: #FFB85A;
-    color: #333;
-}
-#table tr:nth-child(even) td {
-    background-color: #F0F0F0;
-}
-
+/* Медиазапросы для адаптации на мобильных устройствах */
 @media (max-width: 767px) {
   .header {
     flex-direction: column;
@@ -204,3 +170,4 @@ display: flex;
     border-radius: 5px;
   }
 }
+
