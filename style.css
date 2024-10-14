@@ -145,23 +145,45 @@ display: flex;
 #table tr:nth-child(even) td {
     background-color: #F0F0F0;
 }
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .header {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+
+  #logo {
+    margin-bottom: 10px;
   }
 
   .menu {
-    justify-content: flex-end;
+    justify-content: center;
+    margin-top: 10px;
   }
 
   .menu nav ul {
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
   }
 
   .menu nav ul li {
-    margin-left: 20px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  .menu nav ul li a {
+    display: block;
+    width: 100%;
+  }
+
+  #links,
+  #table,
+  #forma {
+    width: 100%;
+  }
+
+  #footer {
+    text-align: center;
   }
 }
