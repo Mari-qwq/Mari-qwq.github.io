@@ -146,37 +146,22 @@ display: flex;
     background-color: #F0F0F0;
 }
 @media (min-width: 768px) {
-    .container {
-      flex-direction: row; /* Размещаем элементы по горизонтали */
-    }
-  
-    .menu {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-  
-    .container > * {
-      flex: 1; /* Равномерное распределение пространства */
-    }
-  
-    #links {
-      order: 1; /* Отобразить список выше таблицы */
-      flex-direction: row; /* Размещаем элементы по горизонтали */
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-  
-    .menu {
-      top: 0; /* Remove top offset for larger screens */
-      float: right; /* Use float for consistent right alignment */
-    }
-  
-    .menu ul {
-      flex-direction: row; /* Размещаем элементы по горизонтали */
-    }
-  
-    .menu li {
-      margin-bottom: 0; /* Убираем отступ между элементами */
-      margin-right: 5px; /* Добавляем отступ в 5px между элементами в горизонтальном списке */
-    }
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  .menu {
+    justify-content: flex-end;
+  }
+
+  .menu nav ul {
+    flex-direction: row;
+  }
+
+  .menu nav ul li {
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+}
