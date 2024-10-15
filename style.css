@@ -16,6 +16,7 @@ body {
   padding: 20px;
   border-radius: 8px;
   border: 2px solid #FFB85A;
+  width: 100%;
 }
 
 #logo {
