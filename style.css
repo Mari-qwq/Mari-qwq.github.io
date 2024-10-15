@@ -111,6 +111,7 @@ body {
   background-color: #1D5B8A;
   padding: 20px;
   text-align: left;
+  width: 100%;
   
 }
 .responsive-img {
@@ -121,10 +122,7 @@ body {
 
 /* Медиазапросы для адаптации на мобильных устройствах */
 @media (max-width: 900px) {
-  body{
-     margin: 0;
-    max-width: 100%;
-  }
+
   .header {
     display: flex;
      max-width: 100%
