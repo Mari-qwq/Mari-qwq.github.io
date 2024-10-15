@@ -141,7 +141,7 @@ body {
     display: flex;
     flex-direction: column; /* Ссылки идут одна под другой */
     align-items: center;
-   order: 1;
+   order: 2;
   }
 
   .menu ul {
