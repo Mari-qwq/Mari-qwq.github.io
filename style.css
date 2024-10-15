@@ -118,7 +118,7 @@ body {
 
 
 /* Медиазапросы для адаптации на мобильных устройствах */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .header {
     display: flex;
      max-width: 100%
