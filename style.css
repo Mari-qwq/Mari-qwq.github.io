@@ -88,6 +88,8 @@ body {
     border-collapse: collapse;
     max-width: 100%;
     display: block;
+    border: none;
+    width: 100%;
   }
   
   #table th,
@@ -115,7 +117,7 @@ body {
   #footer {
     background-color: #1D5B8A;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
   
@@ -173,6 +175,11 @@ body {
       }
       #forma{
         order: 3;
-    
       }
+      #table table {
+        display: table; /* Стандартное табличное поведение для десктопов */
+        width: 100%; /* На всю ширину секции */
+    }
+      
   }
+  
