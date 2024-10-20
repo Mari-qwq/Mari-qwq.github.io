@@ -1,191 +1,178 @@
 body {
-  margin: 0;
-  background-color: #064B80;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  background-color: #97C3E4;
-  padding: 20px;
-  border-radius: 8px;
-  border: 2px solid #FFB85A;
-  
-}
-
-#logo {
-  flex-shrink: 0;
-}
-
-#site-name {
-  font-size: 24px;
-  align-self: center;
-  text-align: center;
-  flex-grow: 1;
-  margin: 0;
-}
-
-.menu {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  margin-top: -10px;
-  position: relative;
-  
-}
-
-.menu nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
-}
-
-.menu nav ul li {
-  margin-left: 20px;
-}
-
-.menu nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px;
-  background-color: #1D5B8A;
-  border-radius: 5px;
-}
-
-.menu nav ul li a:hover {
-  background-color: #FFB85A;
-}
-
-#links,
-#table,
-#forma {
-  background-color: #97C3E4;
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 20px;
-  border: 2px solid #FFB85A;
-}
-
-#links h1,
-#table h2,
-#forma h2 {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-#table table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-#table th,
-#table td {
-  padding: 10px;
-  text-align: center;
-  border: 2px solid #FFB85A;
-}
-
-#table th {
-  background-color: #1D5B8A;
-  color: white;
-  font-weight: bold;
-}
-
-#table td {
-  background-color: #FFB85A;
-  color: #333;
-}
-
-#table tr:nth-child(even) td {
-  background-color: #F0F0F0;
-}
-
-#footer {
-  background-color: #1D5B8A;
-  padding: 20px;
-  text-align: left;
-  width: 100%;
-  
-}
-.responsive-img {
-  max-width: 100%;  /* Изображение не будет шире контейнера */
-  height: auto;     /* Сохраняем пропорции изображения */
-}
-
-
-/* Медиазапросы для адаптации на мобильных устройствах */
-@media (max-width: 900px) {
-
-  .header {
-    display: flex;
-     max-width: 100%
-    flex-direction: row;
-    allign-items: centre;
-     margin: 0;
+    margin: 0;
+    background-color: #064B80;
   }
+  
   .container {
-    max-width: 100%; /* Ширина контейнера будет адаптироваться под мобильные устройства */
-    padding: 10px; 
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
     display: flex;
     flex-direction: column;
   }
-
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    background-color: #97C3E4;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #FFB85A;
+  }
+  
   #logo {
     margin-bottom: 10px;
+    flex-shrink: 0;
   }
-
- .menu {
+  
+  #site-name {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .menu {
     display: flex;
-    flex-direction: column; /* Ссылки идут одна под другой */
-    align-items: center;
-   
-  }
-
-  .menu ul {
-    flex-direction: column; /* Вертикальное расположение ссылок */
-    width: 100%;
+    flex-direction: column;
     align-items: center;
   }
-
-  .menu li {
-    width: 100%; 
+  
+  .menu nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu nav ul li {
     margin: 5px 0;
   }
-
-  .menu li a {
+  
+  .menu nav ul li a {
     display: block;
     text-align: center;
-    width: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #1D5B8A;
+    border-radius: 5px;
   }
+  
+  .menu nav ul li a:hover {
+    background-color: #FFB85A;
+  }
+  
   #links,
   #table,
   #forma {
-    width: 100%;
+    background-color: #97C3E4;
+    padding: 20px;
+    border-radius: 8px;
     margin-top: 10px;
+    border: 2px solid #FFB85A;
   }
 
-  #footer {
-     max-width: 100%
+  
+  #links h1,
+  #table h2,
+  #forma h2 {
     text-align: center;
+    margin-bottom: 15px;
   }
-  #table {
-    order: 1; /* Таблица будет отображаться первой */
+  
+ 
+  #table table {
+    overflow-x: auto;
+    border-collapse: collapse;
+    max-width: 100%;
+    display: block;
   }
-
-  #links {
-    order: 2; /* Ссылки будут отображаться после таблицы */
+  
+  #table th,
+  #table td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #FFB85A;
   }
-  #forma {
-    order: 3; /* Ссылки будут отображаться после таблицы */
+  
+  #table th {
+    background-color: #1D5B8A;
+    color: white;
+    font-weight: bold;
   }
-}
-
-
+  
+  #table td {
+    background-color: #FFB85A;
+    color: #333;
+  }
+  
+  #table tr:nth-child(even) td {
+    background-color: #F0F0F0;
+  }
+  
+  #footer {
+    background-color: #1D5B8A;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Стили для десктопных версий (ширина более 900px) */
+  @media (min-width: 900px) {
+    .container {
+      max-width: 960px;
+      padding: 20px;
+      flex-direction: column;
+    }
+  
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #site-name {
+        text-align: center;
+        align-self: center;
+      }
+    #logo {
+      margin-bottom: 0;
+    }
+  
+    .menu {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      margin-top: -10px;
+      flex-direction: row;
+    }
+  
+    .menu nav ul {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  
+    .menu nav ul li {
+      margin-left: 20px;
+      margin-bottom: 0;
+    }
+  
+    #footer {
+      text-align: left;
+    }
+    #links{
+        order:1;
+      }
+      #table{
+        order: 2;
+      }
+      #forma{
+        order: 3;
+    
+      }
+  }
