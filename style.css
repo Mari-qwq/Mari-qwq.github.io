@@ -34,9 +34,12 @@ body {
   }
   
   .menu {
+      position: relative;
+      top:60px;
+      margin:-12px;
     display: flex;
     align-items: flex-start;
-    margin-top: 50px;
+    
     background-color: #97C3E4;
     padding: 10px;
     border-radius: 8px;
