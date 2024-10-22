@@ -136,7 +136,7 @@ body {
   }
   
   /* Стили для десктопных версий (ширина более 900px) */
-  @media (min-width: 900px) {
+  @media (min-width: 576px) {
     .container {
       max-width: 960px;
       margin: 0 auto;
