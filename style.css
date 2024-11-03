@@ -1,198 +1,40 @@
 body {
-    margin: 0;
     background-color: #064B80;
-  }
-  
-  .container {
-    margin-top: 145px;
-    max-width: 100%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .header {
-    max-height: 100px;
-    display: flex;
-    flex-direction: column;
-    background-color: #97C3E4;
-    padding: 20px;
-    border-radius: 8px;
-    border: 2px solid #FFB85A;
-  }
-  
-  #logo {
-    float: left;
-    margin-bottom: 10px;
-    flex-shrink: 0;
-  }
-  
-  #site-name {
-    margin-top: -70px;
-    font-size: 24px;
-    text-align: right;
-  }
-  
-  .menu {
-      position: relative;
-      top:60px;
-      margin:-12px;
-    display: flex;
-    align-items: flex-start;
     
+}
+header {
     background-color: #97C3E4;
-    padding: 10px;
-    border-radius: 8px;
-    border: 2px solid #FFB85A;
   }
+nav {
   
-  .menu nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin: 0;
-    padding: 0;
-  }
+  background-color: #c2e6ff;
   
-  .menu nav ul li {
-    margin: 5px 0;
-  }
-  
-  .menu nav ul li a {
-    display: block;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    background-color: #1D5B8A;
-    border-radius: 5px;
-  }
-  
-  .menu nav ul li a:hover {
-    background-color: #FFB85A;
-  }
-  
-  #links,
-  #table,
-  #forma {
-    background-color: #97C3E4;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 10px;
-    border: 2px solid #FFB85A;
-  }
+}
 
-  
-  #links h1,
-  #table h2,
-  #forma h2 {
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  
- 
-  #table table {
-    overflow-x: auto;
-    border-collapse: collapse;
-    max-width: 100%;
-    display: block;
-    border: none;
-    width: 100%;
-  }
-  
-  #table th,
-  #table td {
-    padding: 10px;
-    text-align: center;
-    border: 2px solid #FFB85A;
-  }
-  
-  #table th {
-    background-color: #1D5B8A;
-    color: white;
-    font-weight: bold;
-  }
-  
-  #table td {
+#links,
+#table,
+#forma {
+  background-color: #97C3E4;
+}
+
+@media (min-width: 992px) { /* Для десктопной версии (lg и выше) */
+    .nav-desktop {
+        border: none!important; /* Убираем границу */
+        background-color: transparent; /* Убираем задний фон */
+    }
+}
+
+
+
+.table th {
+    background-color: #064B80;
+}
+
+.table td {
     background-color: #FFB85A;
-    color: #333;
-  }
-  
-  #table tr:nth-child(even) td {
-    background-color: #F0F0F0;
-  }
-  
-  #footer {
-    background-color: #1D5B8A;
-    padding: 20px;
-    text-align: left;
-    width: 100%;
-  }
-  
-  .responsive-img {
+}
+
+.responsive-img {
     max-width: 100%;
     height: auto;
-  }
-  
-  /* Стили для десктопных версий (ширина более 900px) */
-  @media (min-width: 576px) {
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 20px;
-      flex-direction: column;
-    }
-  
-    .header {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    #site-name {
-        margin: 0;
-        text-align: center;
-        align-self: center;
-      }
-    #logo {
-      margin-bottom: 0;
-    }
-  
-    .menu {
-        position:static;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-start;
-      margin-top: -10px;
-      flex-direction: row;
-      border: none;
-    }
-  
-    .menu nav ul {
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-  
-    .menu nav ul li {
-      margin-left: 20px;
-      margin-bottom: 0;
-    }
-  
-    #footer {
-      text-align: left;
-    }
-    #links{
-        order:1;
-      }
-      #table{
-        order: 2;
-      }
-      #forma{
-        order: 3;
-      }
-      #table table {
-        display: table; /* Стандартное табличное поведение для десктопов */
-        width: 100%; /* На всю ширину секции */
-    }
-      
-  }
-  
+}
