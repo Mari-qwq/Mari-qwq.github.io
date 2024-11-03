@@ -1,106 +1,121 @@
 <!DOCTYPE html>
-<html>
-    <head>
-         <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ссылки</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ссылки</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="C:\Users\masha\Downloads\stylee.css">
+</head>
 <body>
+
+    <header class="container-fluid py-3 border rounded mb-4">
+        <div class="row align-items-center justify-content-between">
+            <!-- Логотип -->
+            <div id="logo" class="col-12 col-lg-auto d-flex justify-content-start">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_n1e6wpsBx3n3moLaCsNsYiWTvpEJjWSofoCwzLldv5Qj0=s900-c-k-c0x00ffffff-no-rj" width="100" alt="Логотип сайта">
+            </div>
     
-    <header class="header">
-        
-            <div id="logo"><img src = "https://yt3.googleusercontent.com/ytc/AIdro_n1e6wpsBx3n3moLaCsNsYiWTvpEJjWSofoCwzLldv5Qj0=s900-c-k-c0x00ffffff-no-rj" width = 100 alt = "Логотип сайта" ></div>
-     <h1 id="site-name">Название сайта</h1>
-            <div class="menu">
-                <nav>
-              <ul>
-                <li><a href="#link">Список ссылок</a></li>
-                <li><a href="#table-header">Таблица</a></li>
-                <li><a href="#form">Форма</a></li>
-              </ul>
-                    </nav> 
-              
-                </div>
-        
-       </header>
-    <div class="container">
-    <section id="table">
-    <h2 id="table-header">Таблица</h2>
-    <table border = "1">
-        <thead>
-            <tr>
-                <th>Колонка 1</th>
-                <th>Колонка 2</th>
-                <th>Колонка 3</th>
-                <th>Колонка 4</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ячейка 1-1</td>
-                <td colspan="2">Объединённая по горизонтали</td>
-                <td>Ячейка 1-4</td>
-            </tr>
-            <tr>
-                <td rowspan="2">Объединённая по вертикали</td>
-                <td>Ячейка 2-2</td>
-                <td>Ячейка 2-3</td>
-                <td>Ячейка 2-4</td>
-            </tr>
-            <tr>
-                <td>Ячейка 3-2</td>
-                <td>Ячейка 3-3</td>
-                <td>Ячейка 3-4</td>
-            </tr>
-            <tr>
-                <td>Ячейка 4-1</td>
-                <td>Ячейка 4-2</td>
-                <td>Ячейка 4-3</td>
-                <td>Ячейка 4-4</td>
-            </tr>
-            <tr>
-                <td>Ячейка 5-1</td>
-                <td>Ячейка 5-2</td>
-                <td>Ячейка 5-3</td>
-                <td>Ячейка 5-4</td>
-            </tr>
-            <tr>
-                <td>Ячейка 6-1</td>
-                <td>Ячейка 6-2</td>
-                <td>Ячейка 6-3</td>
-                <td>Ячейка 6-4</td>
-            </tr>
-        </tbody>
-        
-    </table>
+            <!-- Название сайта -->
+            <h1 id="site-name" class="col-12 col-lg-auto text-dark mb-4 my-lg-0" style="font-size: 32px;">Название сайта</h1>
+    
+            <!-- Навигация -->
+            <nav class="col-12 col-lg-auto border rounded nav-desktop mb-8 ">
+                <ul class="nav flex-column flex-lg-row align-items-start ps-0 ms-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-0" href="#link">Список ссылок</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-0" href="#table-header">Таблица</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-0" href="#form">Форма</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <main class="container col-12 col-lg-7">
+        <!-- Таблица -->
+        <section id="table" class=" mb-4 p-4  border rounded">
+            <h2 id="table-header" class="text-center text-dark mb-3">Таблица</h2>
+            <div class="table-responsive">
+            <table class="table table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <th>Колонка 1</th>
+                            <th>Колонка 2</th>
+                            <th>Колонка 3</th>
+                            <th>Колонка 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ячейка 1-1</td>
+                            <td colspan="2">Объединённая по горизонтали</td>
+                            <td>Ячейка 1-4</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Объединённая по вертикали</td>
+                            <td>Ячейка 2-2</td>
+                            <td>Ячейка 2-3</td>
+                            <td>Ячейка 2-4</td>
+                        </tr>
+                        <tr>
+                            <td>Ячейка 3-2</td>
+                            <td>Ячейка 3-3</td>
+                            <td>Ячейка 3-4</td>
+                        </tr>
+                        <tr>
+                            <td>Ячейка 4-1</td>
+                            <td>Ячейка 4-2</td>
+                            <td>Ячейка 4-3</td>
+                            <td>Ячейка 4-4</td>
+                        </tr>
+                        <tr>
+                            <td>Ячейка 5-1</td>
+                            <td>Ячейка 5-2</td>
+                            <td>Ячейка 5-3</td>
+                            <td>Ячейка 5-4</td>
+                        </tr>
+                        <tr>
+                            <td>Ячейка 6-1</td>
+                            <td>Ячейка 6-2</td>
+                            <td>Ячейка 6-3</td>
+                            <td>Ячейка 6-4</td>
+                        </tr>
+                    </tbody>
+                    
+            </table>
+        </div>
         </section>
-    <section id="links">
-    <h1 id="link">Список ссылок</h1>
 
-    <ul>
-        <li>Абсолютная гиперссылка на главную страницу сайта kubsu.ru: <a href="http://kubsu.ru/">Главная страница kubsu.ru</a></li>
-        <li>Абсолютная гиперссылка на главную страницу сайта kubsu.ru в протоколе https: <a href="https://kubsu.ru/">Главная страница kubsu.ru</a></li>
-        <li>Ссылка-изображение: <a href="https://kubsu.ru/"><img src = "https://i.pinimg.com/736x/16/38/8e/16388e899178269c158fd963ad6b8061.jpg" width = 200 alt = "Пример изображения"></a></li>
-        <li>Сокращенная ссылка на внутреннюю страницу: <a href="./index2.html">Внутренняя страница</a></li>
-        <li>Сокращенная ссылка на главную страницу: <a href="./index.html">Главная страница</a></li>
-        <li>Ссылка на фрагмент текущей страницы<a href="#forma">Перейти к форме</a></li>
-         <li>Ссылка с 3 параметрами в URL<a href="https://example.com?param1=value1&param2=value2&param3=value3">Пример ссылки</a></li>
-        <li>Ссылка с параметром id в URL<a href="https://example.com?id=777">Пример ссылки</a></li>
-        <li>Относительная ссылка в текущем каталоге<a href="index2.html">Ссылка</a></li>
-        <li>Относительная ссылка в каталоге about<a href="about/indexx.html">Пример ссылки</a></li>
-        <li>Относительная ссылка на страницу в каталоге уровнем выше текущего <a href="../about/indexx.html">Пример ссылки</a></li>
-        <li>Относительная ссылка на страницу в каталоге двумя уровнями выше<a href="../../about/indexx.html">Пример ссылки</a></li>
-        <li>Ссылка на фрагмент страницы стороннего сайта<a href="https://example.com#section-id">Пример ссылки</a></li>
-        <li>Ссылка с пустым href: <a href="">Пример ссылки</a></li>
-        <li>Ссылка без href: <a>Пример ссылки</a></li>
-        <li>Ссылка, запрещенная для индексации поисковикам: <a href="https://kubsu.ru/" rel="noindex">Пример ссылки</a></li>
-        <li>Ссылка, по которой запрещен переход поисковикам: <a href="https://kubsu.ru/" rel="nofollow">Пример ссылки</a></li>
-        <li>Ссылка на файл на сервере FTP с авторизацией<a href="ftp://username:password@ftp.example.ru/file.txt">Ссылка</a></li>
-    </ul>
-
-    <h3> Нумерованный список ссылок с подписями title</h3>
+        <!-- Ссылки -->
+        <section id="links" class="p-4 mb-3 border rounded">
+            <h2 id="link" class="text-center text-dark mb-3">Список ссылок</h2>
+            <ul class="list-unstyled">
+                    <li>Абсолютная гиперссылка на главную страницу сайта kubsu.ru: <a href="http://kubsu.ru/">Главная страница kubsu.ru</a></li>
+                    <li>Абсолютная гиперссылка на главную страницу сайта kubsu.ru в протоколе https: <a href="https://kubsu.ru/">Главная страница kubsu.ru</a></li>
+                    <li>Ссылка-изображение: <a href="https://kubsu.ru/"><img src = "https://i.pinimg.com/736x/16/38/8e/16388e899178269c158fd963ad6b8061.jpg" width = 200 alt = "Пример изображения"></a></li>
+                    <li>Сокращенная ссылка на внутреннюю страницу: <a href="./index2.html">Внутренняя страница</a></li>
+                    <li>Сокращенная ссылка на главную страницу: <a href="./index.html">Главная страница</a></li>
+                    <li>Ссылка на фрагмент текущей страницы<a href="#forma">Перейти к форме</a></li>
+                     <li>Ссылка с 3 параметрами в URL<a href="https://example.com?param1=value1&param2=value2&param3=value3">Пример ссылки</a></li>
+                    <li>Ссылка с параметром id в URL<a href="https://example.com?id=777">Пример ссылки</a></li>
+                    <li>Относительная ссылка в текущем каталоге<a href="index2.html">Ссылка</a></li>
+                    <li>Относительная ссылка в каталоге about<a href="about/indexx.html">Пример ссылки</a></li>
+                    <li>Относительная ссылка на страницу в каталоге уровнем выше текущего <a href="../about/indexx.html">Пример ссылки</a></li>
+                    <li>Относительная ссылка на страницу в каталоге двумя уровнями выше<a href="../../about/indexx.html">Пример ссылки</a></li>
+                    <li>Ссылка на фрагмент страницы стороннего сайта<a href="https://example.com#section-id">Пример ссылки</a></li>
+                    <li>Ссылка с пустым href: <a href="">Пример ссылки</a></li>
+                    <li>Ссылка без href: <a>Пример ссылки</a></li>
+                    <li>Ссылка, запрещенная для индексации поисковикам: <a href="https://kubsu.ru/" rel="noindex">Пример ссылки</a></li>
+                    <li>Ссылка, по которой запрещен переход поисковикам: <a href="https://kubsu.ru/" rel="nofollow">Пример ссылки</a></li>
+                    <li>Ссылка на файл на сервере FTP с авторизацией<a href="ftp://username:password@ftp.example.ru/file.txt">Ссылка</a></li>
+                </ul>
+                <h3> Нумерованный список ссылок с подписями title</h3>
     <ol>
         <li><a href="https://kubsu.ru/" title="Сайт кубгу">Первая ссылка</a></li>
         <li><a href="https://www.kubsu.ru/ru/fktipm" title = "Сайт ФКТиПМ">Вторая ссылка</a></li>
@@ -123,60 +138,62 @@
     <map name="image1">
         <area shape="circle" coords="100,100,100" href="https://example.com" alt="Перейти на сайт">
     </map>
-    </section>
-   
-    
-        <section id="forma">
-    <h2> Форма</h2>
-    <form id = "form">
-        <label for="fio">ФИО:</label><br>
-        <input type="text" id="fio" name="fio" placeholder="Введие ФИО"><br><br>
-    
-        <label for="number">Телефон:</label><br>
-        <input type="tel" id="number" name="number" placeholder="Введите телефон"><br><br>
-    
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email" placeholder="Введите email"><br><br>
-    
-        <label for="birthday">Дата рождения:</label><br>
-        <input type="date" id="birthday" name="birthday"><br><br>
-    
-        <label for="gender">Пол:</label><br>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Мужской</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Женский</label><br><br>
-    
-        <label for="languages">Ваш любимый язык программирования:</label><br>
-        <select id="languages" name="languages[]" multiple>
-          <option value="Pascal">Pascal</option>
-          <option value="C">C</option>
-          <option value="C++">C++</option>
-          <option value="JavaScript">JavaScript</option>
-          <option value="PHP">PHP</option>
-          <option value="Python">Python</option>
-          <option value="Java">Java</option>
-          <option value="Haskel">Haskel</option>
-          <option value="Clojure">Clojure</option>
-          <option value="Prolog">Prolog</option>
-          <option value="Scala">Scala</option>
-          <option value="Fortran">Fortran</option>
-        </select><br><br>
-    
-        <label for="biography">Биография:</label><br>
-        <textarea id="biography" name="biography"></textarea><br><br>
-    
-        <input type="checkbox" id="agreement" name="agreement">
-        <label for="agreement">С контрактом ознакомлен(а)</label><br><br>
-        
-        <input type="submit" value="Сохранить">
-      </form>
-             </section>
-    </div>
-        <footer id="footer">
+        </section>
+
+        <!-- Форма -->
+        <section id="forma" class="mb-4 p-4  border rounded">
+            <h2 class="text-center text-dark mb-3">Форма</h2>
+            <form id = "form">
+                <label for="fio">ФИО:</label><br>
+                <input type="text" id="fio" name="fio" placeholder="Введие ФИО"><br><br>
             
-                <p>&copy; s0188098 Лысенко Мария</p>
+                <label for="number">Телефон:</label><br>
+                <input type="tel" id="number" name="number" placeholder="Введите телефон"><br><br>
             
-        </footer>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="Введите email"><br><br>
+            
+                <label for="birthday">Дата рождения:</label><br>
+                <input type="date" id="birthday" name="birthday"><br><br>
+            
+                <label for="gender">Пол:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Мужской</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Женский</label><br><br>
+            
+                <label for="languages">Ваш любимый язык программирования:</label><br>
+                <select id="languages" name="languages[]" multiple>
+                  <option value="Pascal">Pascal</option>
+                  <option value="C">C</option>
+                  <option value="C++">C++</option>
+                  <option value="JavaScript">JavaScript</option>
+                  <option value="PHP">PHP</option>
+                  <option value="Python">Python</option>
+                  <option value="Java">Java</option>
+                  <option value="Haskel">Haskel</option>
+                  <option value="Clojure">Clojure</option>
+                  <option value="Prolog">Prolog</option>
+                  <option value="Scala">Scala</option>
+                  <option value="Fortran">Fortran</option>
+                </select><br><br>
+            
+                <label for="biography">Биография:</label><br>
+                <textarea id="biography" name="biography"></textarea><br><br>
+            
+                <input type="checkbox" id="agreement" name="agreement">
+                <label for="agreement">С контрактом ознакомлен(а)</label><br><br>
+                
+                <input type="submit" value="Сохранить">
+              </form>
+        </section>
+    </main>
+
+    <footer class="container-fluid py-3 text-left mt-4" style="background-color: #1D5B8A;">
+        <p>&copy; s0188098 Лысенко Мария</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
