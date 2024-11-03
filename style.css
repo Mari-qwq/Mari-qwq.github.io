@@ -5,11 +5,7 @@ body {
 header {
     background-color: #97C3E4;
   }
-nav {
-  
-  background-color: #c2e6ff;
-  
-}
+
 
 #links,
 #table,
@@ -17,12 +13,6 @@ nav {
   background-color: #97C3E4;
 }
 
-@media (min-width: 992px) { /* Для десктопной версии (lg и выше) */
-    .nav-desktop {
-        border: none!important; /* Убираем границу */
-        background-color: transparent; /* Убираем задний фон */
-    }
-}
 
 
 
