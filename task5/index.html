@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости заказа</title>
+    <style>
+        body {
+            background-image: url('background.jpg'); 
+            background-repeat: repeat; 
+            background-size: 600px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .calculator {
+            text-align: center;
+            background-image: url('background2.jpg'); 
+            background-repeat: repeat;
+            background-size: 400px;
+            width: 600px;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+    width: 100%;          /* Ширина изображения по ширине контейнера */
+    aspect-ratio: 1 / 1;  /* Соотношение сторон 1:1, что делает изображение квадратным */
+    object-fit: cover;    /* Обрезает изображение, чтобы оно вписывалось в квадрат */
+    border-radius: 10px;  
+    cursor: pointer;      
+    transition: transform 0.3s;
+}
+
+        .product-image:hover {
+            transform: scale(1.1);
+        }
+
+        .product-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .product-item.selected .product-image {
+            border: 2px solid #7ad147; /* Подсветка выбранного изображения */
+        }
+
+        .calculator label, .calculator button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .error {
+            color: rgb(196, 91, 91);
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h2>Калькулятор стоимости заказа</h2>
+        <label for="quantity">Количество:</label>
+        <input type="number" id="quantity" min="1" value="1">
+
+        <label for="product">Выберите товар:</label>
+        <div class="product-images">
+            <!-- Эклеры -->
+            <div class="product-item" onclick="selectProduct('eclair', 120)">
+                <img src="https://i.pinimg.com/236x/01/3b/9e/013b9ec9b28ee59d889e33175630c1ee.jpg" alt="Эклер" class="product-image">
+                <div class="product-name">Эклер</div>
+                <div class="product-price">120 руб</div>
+            </div>
+            <!-- Моти -->
+            <div class="product-item" onclick="selectProduct('mochi', 160)">
+                <img src="https://i.pinimg.com/736x/11/27/29/11272982d4f14e59325220578b8f4085.jpg" alt="Моти" class="product-image">
+                <div class="product-name">Моти</div>
+                <div class="product-price">160 руб</div>
+            </div>
+            <!-- Печенье Мадлен -->
+            <div class="product-item" onclick="selectProduct('madlen', 60)">
+                <img src="https://i.pinimg.com/736x/1a/9f/10/1a9f10ad4ddb806df58194daa37599c1.jpg" alt="Печенье Мадлен" class="product-image">
+                <div class="product-name">Печенье Мадлен</div>
+                <div class="product-price">60 руб</div>
+            </div>
+            <!-- Макаронсы -->
+            <div class="product-item" onclick="selectProduct('macaroon', 155)">
+                <img src="https://i.pinimg.com/736x/ac/b1/be/acb1be6cc53182341b5699dcaba34447.jpg" alt="Макарун" class="product-image">
+                <div class="product-name">Макарон</div>
+                <div class="product-price">155 руб</div>
+            </div>
+            <!-- Пончик -->
+            <div class="product-item" onclick="selectProduct('donut', 130)">
+                <img src="https://i.pinimg.com/736x/ac/0e/e1/ac0ee1574f0ca7f3915e1286b2b7758f.jpg" alt="Пончик" class="product-image">
+                <div class="product-name">Пончик</div>
+                <div class="product-price">130 руб</div>
+            </div>
+            <!-- Клубника в шоколаде -->
+            <div class="product-item" onclick="selectProduct('strawberry', 110)">
+                <img src="https://i.pinimg.com/736x/87/85/02/878502e36dd667a008c9070e3116ca2d.jpg" alt="Клубника в шоколаде" class="product-image">
+                <div class="product-name">Клубника в шоколаде</div>
+                <div class="product-price">110 руб</div>
+            </div>
+        </div>
+
+        <button onclick="calculateTotal()">Рассчитать стоимость</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        let selectedPrice = 0;
+
+        function selectProduct(productId, price) {
+            // Обновляем выбранную цену
+            selectedPrice = price;
+
+            // Удаляем класс "selected" со всех продуктов
+            document.querySelectorAll('.product-item').forEach(item => item.classList.remove('selected'));
+
+            // Добавляем класс "selected" к выбранному продукту
+            event.currentTarget.classList.add('selected');
+        }
+
+        function calculateTotal() {
+            const quantity = parseFloat(document.getElementById('quantity').value);
+            const resultElement = document.getElementById('result');
+
+            // Проверяем, является ли значение количества положительным целым числом
+            if (quantity <= 0 || !Number.isInteger(quantity)) {
+                resultElement.textContent = 'Ошибка: количество должно быть положительным целым числом.';
+                resultElement.className = 'error';
+                return;
+            }
+
+            // Проверяем, был ли выбран товар
+            if (selectedPrice === 0) {
+                resultElement.textContent = 'Ошибка: выберите товар.';
+                resultElement.className = 'error';
+                return;
+            }
+
+            // Рассчитываем общую стоимость
+            const total = quantity * selectedPrice;
+
+            // Выводим результат на страницу
+            resultElement.textContent = 'Общая стоимость: ' + total + ' ₽';
+            resultElement.className = '';
+        }
+    </script>
+</body>
+</html>
