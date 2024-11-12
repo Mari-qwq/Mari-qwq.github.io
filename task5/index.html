@@ -5,63 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Калькулятор стоимости заказа</title>
     <style>
-        body {
-            background-image: url('background.jpg'); 
-            background-repeat: repeat; 
-            background-size: 600px;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .calculator {
-            text-align: center;
-            background-image: url('background2.jpg'); 
-            background-repeat: repeat;
-            background-size: 400px;
-            width: 600px;
-            padding: 30px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .product-image {
-    width: 100%;          /* Ширина изображения по ширине контейнера */
-    aspect-ratio: 1 / 1;  /* Соотношение сторон 1:1, что делает изображение квадратным */
-    object-fit: cover;    /* Обрезает изображение, чтобы оно вписывалось в квадрат */
-    border-radius: 10px;  
-    cursor: pointer;      
-    transition: transform 0.3s;
-}
-
-        .product-image:hover {
-            transform: scale(1.1);
-        }
-
-        .product-images {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            margin: 20px 0;
-        }
         
-        .product-item.selected .product-image {
-            border: 2px solid #7ad147; /* Подсветка выбранного изображения */
-        }
-
-        .calculator label, .calculator button {
-            display: block;
-            width: 100%;
-            margin: 10px 0;
-        }
-
-        .error {
-            color: rgb(196, 91, 91);
-            font-size: 0.9em;
-        }
     </style>
 </head>
 <body>
