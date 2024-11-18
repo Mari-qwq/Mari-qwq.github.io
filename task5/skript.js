@@ -1,6 +1,10 @@
 let selectedPrice = 0;
 
-function selectProduct(productId, price) {
+// Обработчик выбора продукта
+function selectProduct(event) {
+    const productItem = event.currentTarget;
+    const price = parseFloat(productItem.dataset.price);
+
     // Обновляем выбранную цену
     selectedPrice = price;
 
@@ -8,9 +12,10 @@ function selectProduct(productId, price) {
     document.querySelectorAll('.product-item').forEach(item => item.classList.remove('selected'));
 
     // Добавляем класс "selected" к выбранному продукту
-    event.currentTarget.classList.add('selected');
+    productItem.classList.add('selected');
 }
 
+// Обработчик расчета стоимости
 function calculateTotal() {
     const quantity = parseFloat(document.getElementById('quantity').value);
     const resultElement = document.getElementById('result');
@@ -36,3 +41,14 @@ function calculateTotal() {
     resultElement.textContent = 'Общая стоимость: ' + total + ' ₽';
     resultElement.className = '';
 }
+
+// Навешиваем обработчики событий на элементы
+document.addEventListener('DOMContentLoaded', () => {
+    // Добавляем обработчики клика на продукты
+    document.querySelectorAll('.product-item').forEach(item => {
+        item.addEventListener('click', selectProduct);
+    });
+
+    // Добавляем обработчик клика на кнопку
+    document.getElementById('calculate-button').addEventListener('click', calculateTotal);
+});
