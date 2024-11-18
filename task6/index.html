@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости заказа</title>
+    <link rel="stylesheet" href="style.css">
+        
+</head>
+<body>
+    <div class="calculator">
+        <h2>Калькулятор стоимости заказа</h2>
+        <label for="quantity">Количество:</label>
+        <input type="number" id="quantity" min="1" value="1">
+      
+            <!-- Тип услуги -->
+            <div class="radioknopki"> 
+                <div class="rad"><label for="courier1">Доставка(от 2- 5 дней)</label>
+                    <input type="radio" id="courier1" name="servicetype" value="350">
+                    
+                </div>
+                <div class="rad"><label for="courier2">Быстрая доставка</label>
+                    <input type="radio" id="courier2" name="servicetype" value="500" checked>
+                    
+                </div>
+                <div class="rad"><label for="pickup">Самовывоз</label>
+                    <input type="radio" id="pickup" name="servicetype" value="0" checked>
+                    
+                </div>
+            </div>
+    
+            <div class="select-group" id="productOptions">
+               <label for="flavor">Вкус: </label>
+                <select id="flavor" name="flavor">
+                </select>
+            </div>
+            <div class="checkb" id="checklenta"><label for="box">Красивая упаковка</label><br>
+                <input type="checkbox" id="box">
+                
+            </div>
+
+        <label for="product">Выберите товар:</label>
+        <div class="product-images">
+            <!-- Эклеры -->
+            <div class="product-item" data-id="eclair" data-price="120">
+                <img src="https://i.pinimg.com/236x/01/3b/9e/013b9ec9b28ee59d889e33175630c1ee.jpg" alt="Эклер" class="product-image">
+                <div class="product-name">Эклер</div>
+                <div class="product-price">120 руб</div>
+            </div>
+            <!-- Моти -->
+            <div class="product-item" data-id="mochi" data-price="160">
+                <img src="https://i.pinimg.com/736x/11/27/29/11272982d4f14e59325220578b8f4085.jpg" alt="Моти" class="product-image">
+                <div class="product-name">Моти</div>
+                <div class="product-price">160 руб</div>
+            </div>
+            <!-- Печенье Мадлен -->
+            <div class="product-item" data-id="madlen" data-price="60">
+                <img src="https://i.pinimg.com/736x/1a/9f/10/1a9f10ad4ddb806df58194daa37599c1.jpg" alt="Печенье Мадлен" class="product-image">
+                <div class="product-name">Печенье Мадлен</div>
+                <div class="product-price">60 руб</div>
+            </div>
+            <!-- Макаронсы -->
+            <div class="product-item" data-id="macaroon" data-price="155">
+                <img src="https://i.pinimg.com/736x/ac/b1/be/acb1be6cc53182341b5699dcaba34447.jpg" alt="Макарун" class="product-image">
+                <div class="product-name">Макарон</div>
+                <div class="product-price">155 руб</div>
+            </div>
+            <!-- Пончик -->
+            <div class="product-item" data-id="donut" data-price="130">
+                <img src="https://i.pinimg.com/736x/ac/0e/e1/ac0ee1574f0ca7f3915e1286b2b7758f.jpg" alt="Пончик" class="product-image">
+                <div class="product-name">Пончик</div>
+                <div class="product-price">130 руб</div>
+            </div>
+            <!-- Клубника в шоколаде -->
+            <div class="product-item" data-id="strawberry" data-price="110">
+                <img src="https://i.pinimg.com/736x/87/85/02/878502e36dd667a008c9070e3116ca2d.jpg" alt="Клубника в шоколаде" class="product-image">
+                <div class="product-name">Клубника в шоколаде</div>
+                <div class="product-price">110 руб</div>
+            </div>
+        </div>
+
+        <p id="result"></p>
+    </div>
+
+<script src="skript.js"></script>
+   </body>
+</html>
