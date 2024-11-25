@@ -55,3 +55,33 @@
             color: rgb(196, 91, 91);
             font-size: 0.9em;
         }
+.radioknopki {
+    display: flex; /* Устанавливаем элементы в строку */
+    gap: 20px; /* Расстояние между радиокнопками */
+    align-items: center; /* Выравнивание по вертикали */
+}
+
+.rad label {
+    margin-right: 8px; /* Отступ между текстом и радиокнопкой */
+    display: inline-block;
+}
+
+.rad input[type="radio"] {
+    vertical-align: middle; /* Вертикальное выравнивание */
+}
+
+/* Чекбокс в строку с текстом */
+.checkb {
+    display: flex; /* Элементы в строку */
+    align-items: center; /* Выравнивание по вертикали */
+}
+
+.checkb label {
+    margin-right: 8px; /* Минимальный отступ от текста до чекбокса */
+    display: inline-block;
+}
+
+.checkb input[type="checkbox"] {
+    margin: 0; /* Убираем любые внешние отступы у чекбокса */
+}
+
