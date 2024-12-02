@@ -1,31 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery Slider</title>
+    <title>Слайдер</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
-    <div class="slider-wrapper">
-        <button class="arrow prev" aria-label="Previous">&lt;</button>
-        <div class="slider">
-            <div class="slider-track">
-                <div class="slide"><img src="image1.jpg" alt="Image 1"></div>
-                <div class="slide"><img src="image2.jpg" alt="Image 2"></div>
-                <div class="slide"><img src="image3.jpg" alt="Image 3"></div>
-                <div class="slide"><img src="image4.jpg" alt="Image 4"></div>
-                <div class="slide"><img src="image5.jpg" alt="Image 5"></div>
-                <div class="slide"><img src="image6.jpg" alt="Image 6"></div>
-                <div class="slide"><img src="image7.jpg" alt="Image 7"></div>
-                <div class="slide"><img src="image8.jpg" alt="Image 8"></div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="1.jpg" alt="Изображение 8">
+            </div>
+            <div class="swiper-slide">
+                <img src="2.jpg" alt="Изображение 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="3.jpg" alt="Изображение 2">
+            </div>
+            <div class="swiper-slide">
+                <img src="4.jpg" alt="Изображение 3">
+            </div>
+            <div class="swiper-slide">
+                <img src="5.jpg" alt="Изображение 4">
+            </div>
+            <div class="swiper-slide">
+                <img src="6.jpg" alt="Изображение 5">
+            </div>
+            <div class="swiper-slide">
+                <img src="7.jpg" alt="Изображение 6">
+            </div>
+            <div class="swiper-slide">
+                <img src="8.jpg" alt="Изображение 7">
             </div>
         </div>
-        <button class="arrow next" aria-label="Next">&gt;</button>
+        <div class="pagination-text">
+            <span class="current-page">1</span> из <span class="total-pages">8</span>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
-    <div class="pager"></div>
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
+
 
