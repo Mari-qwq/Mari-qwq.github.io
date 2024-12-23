@@ -12,6 +12,26 @@
   }
   
 
+.inpt, textarea {
+  color: white;          /* Белый цвет текста */
+  background-color: transparent; /* Прозрачный фон */
+  border: 1px solid white; /* Белая рамка вокруг полей */
+}
+
+.inpt::placeholder, textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Светлый белый цвет для плейсхолдера */
+}
+
+textarea {
+  color: white; /* Белый текст в textarea */
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+/* Стили для чекбокса */
+.checkpolit input[type="checkbox"] {
+  accent-color: white; /* Белая галочка */
+}
 
  
   
