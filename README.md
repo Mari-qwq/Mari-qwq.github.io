@@ -4,4 +4,4 @@
 * [Задание 6](./task6)
 *  [Задание 7](./task7)
 *  [Задание 8](./task8)
-* [проект](./project)
+* [проект](./project/project/project.html)
