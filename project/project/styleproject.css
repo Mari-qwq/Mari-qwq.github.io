@@ -96,7 +96,7 @@ textarea {
     text-align: left;
   }
   
-  .dropbtn:hover + .dropdown-content {
+  .dropbtn:hover .dropdown-content {
     display: block;
   }
   
